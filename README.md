@@ -16,6 +16,6 @@ Block Timer: 60 seconds
 
 Maturity: 50 blocks
 
-Max supply: 58 000 000 LTX
+Max supply: 210 000 000 LTX
 
 Premine: 500 000 LTX
