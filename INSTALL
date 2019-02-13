@@ -1,4 +1,4 @@
-Building LTX With Ubutntu 16.04 for Linux Daemon
+Building LTX with Ubutntu 16.04 for Linux Daemon
 
 Use the autogen script to prepare the build environment.
     git clone https://github.com/Simo190/Litex.git
@@ -9,7 +9,7 @@ Use the autogen script to prepare the build environment.
 
 Always verify the signatures and checksums.
 
-Building LTX With Ubuntu 18.04 for Windows 64 Bit
+Building LTX with Ubuntu 18.04 for Windows 64 Bit
 
 Prepare the depends and use the autogen script to prepare the build environment.
 sudo apt install g++-mingw-w64-x86-64
