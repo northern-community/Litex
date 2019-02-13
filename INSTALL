@@ -2,7 +2,7 @@ Building LTX With Ubutntu 16.04 for Linux Daemon
 
 Use the autogen script to prepare the build environment.
     git clone https://github.com/Simo190/Litex.git
-    chmod -R 755 Litex # attribuisci autorizzazioni
+    chmod -R 755 Litex # allow permissions
     ./autogen.sh
     ./configure
     make
@@ -16,9 +16,9 @@ sudo apt install g++-mingw-w64-x86-64
 sudo update-alternatives --config x86_64-w64-mingw32-g++ # Set the default mingw32 g++ compiler option to posix.
 
 git clone https://github.com/Simo190/Litex.git
-chmod -R 755 Litex # attribuisci autorizzazioni
+chmod -R 755 Litex # allow permissions
 cd Litex
-make distclean #elimina precedenti compilazioni
+make distclean # delete any previous compilations
 cd depends/
 make -j2 HOST=x86_64-w64-mingw32
 cd ..
@@ -26,4 +26,4 @@ cd ..
 CONFIG_SITE=$PWD/depends/x86_64-w64-mingw32/share/config.site ./configure --disable-tests --disable$
 make
 make -j2 install-strip
-make deploy # compila wininstaller
+make deploy # compile wininstaller
