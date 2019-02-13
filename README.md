@@ -19,3 +19,6 @@ Maturity: 50 blocks
 Max supply: 210 000 000 LTX
 
 Premine: 500 000 LTX
+
+Update February 2019
+Restyling QT Wallet v2.2.0.4
