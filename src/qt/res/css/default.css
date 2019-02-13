@@ -4,7 +4,7 @@ QWidget:window {					/* Borders around the code editor and debug window */
 }
 
 QToolTip {
-	background-color: #80CBC4;
+	background-color: #3b4241; / old 80CBC4
 	color: black;
     padding: 5px;
     border-radius: 0;
@@ -18,14 +18,14 @@ QLabel {
 }
 
 QDialog, QListView {
-	background-color: #e1e9ed; / 263238 Maybe it's be better the new one
-	color: #546E7A;
+	background-color: #e1e9ed; / Background Wallet
+	color: #2d3133; / New one - the old 546E7A
 	outline: 0;
 	border: 2px solid transparent;
 }
 
 QListView::item:hover {
-	color: #AFBDC4;
+	color: #83898c ; / AFBDC4 the old
 	background: transparent;
 }
 
@@ -37,7 +37,7 @@ QListView::item:selected {
 
 /* === QTabBar === */
 QTabBar {
-	background: #e1e9ed; / 263238 Maybe it's be better the new one
+	background: #e1e9ed; / Background Wallet
 }
 
 QTabWidget::pane {
@@ -48,7 +48,7 @@ QTabBar::tab {
 	background: transparent;
 	border: 0px solid transparent;
 	border-bottom: 2px solid transparent;
-	color: #546E7A;
+	color: #2a2e30; / 546E7A the old
 	padding-left: 10px;
 	padding-right: 10px;
 	padding-top: 3px;
@@ -58,20 +58,20 @@ QTabBar::tab {
 QTabBar::tab:hover {
 	background-color: transparent;
 	border: 0px solid transparent;
-	border-bottom: 2px solid #80CBC4;
-	color: #AFBDC4;
+	border-bottom: 2px solid #3b4241; / 80CBC4 the old
+	color: #adb0b2; / AFBDC4 the old
 }
 
 QTabBar::tab:selected {
 	background-color: transparent;
 	border: 0px solid transparent;
 	border-top: none;
-	border-bottom: 2px solid #80CBC4;
+	border-bottom: 2px solid #3b4241; /  80CBC4 the old
 	color: #FFFFFF;
 }
 
 QStackedWidget {
-	background: #e1e9ed;	/* 263238 This covers a bunch of things, I was thinking about making it transparent, */
+	background: #e1e9ed;	/*  Background Wallet 263238 This covers a bunch of things, I was thinking about making it transparent, */
 							/* but I would have to find all the other elements... but QTabWidget::pane may be it */
 }
 
@@ -83,7 +83,7 @@ QGroupBox {
 }
 
 QGroupBox::title {
-	color: #80CBC4;
+	color: #3b4241; /  80CBC4 the old
     subcontrol-origin: margin;
     left: 6px;
     padding: 0 3px 0 3px;
