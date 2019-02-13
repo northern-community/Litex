@@ -1,6 +1,6 @@
 QWidget:window {					/* Borders around the code editor and debug window */
-	border: 0px solid #263238;
-	background-color: #263238;
+	border: 0px solid #dae5ea;
+	background-color: #dae5ea;
 }
 
 QToolTip {
