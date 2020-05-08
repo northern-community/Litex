@@ -54,7 +54,8 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 
 static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
-    (0, uint256("0x00000d53390d6ba04eccd14e6f8fa73da7fae2442579202b2d2b435d938619c4"));
+    (0, uint256("0x00000d53390d6ba04eccd14e6f8fa73da7fae2442579202b2d2b435d938619c4"))
+    (1000276, uint256("0x56fb1ba2aa59afb3843b2560807ce9c54962828245ae8f033a057032631302f0"));
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
     1528383600, // * UNIX timestamp of last checkpoint block
@@ -93,7 +94,7 @@ public:
         pchMessageStart[2] = 0x1c;
         pchMessageStart[3] = 0xd2;
         vAlertPubKey = ParseHex("045edc8c5106ebf1d9416d96f7515623b2d89f65435a22513bd081cb6f831e8eee6afe6853708698768a87bdcbcd79242f3b0baa45f15effba51adadb48bb7b115");
-        
+
         bnProofOfWorkLimit = ~uint256(0) >> 20;
         nSubsidyHalvingInterval = 210000;
         nMaxReorganizationDepth = 100;
@@ -129,9 +130,10 @@ public:
         assert(hashGenesisBlock == uint256("0x00000d53390d6ba04eccd14e6f8fa73da7fae2442579202b2d2b435d938619c4"));
         assert(genesis.hashMerkleRoot == uint256("0xc36d42b5a8d756d028e6837ee785367b0214d14a34131ae65b8fcaa2efc4f37b"));
 
-        vSeeds.push_back(CDNSSeedData("CDNSSeedData1", "174.138.7.128"));
-        vSeeds.push_back(CDNSSeedData("CDNSSeedData2", "204.48.26.224"));
-        vSeeds.push_back(CDNSSeedData("CDNSSeedData3", "206.189.49.115"));
+        vSeeds.push_back(CDNSSeedData("CDNSSeedData1", "217.61.97.40"));
+        vSeeds.push_back(CDNSSeedData("CDNSSeedData2", "94.177.207.67"));
+        vSeeds.push_back(CDNSSeedData("CDNSSeedData3", "45.76.179.95"));
+        vSeeds.push_back(CDNSSeedData("CDNSSeedData4", "45.77.172.108"));
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 48);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 105);
